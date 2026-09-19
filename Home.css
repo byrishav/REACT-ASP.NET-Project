@@ -1,0 +1,251 @@
+.home {
+    background: #0b0b14;
+    color: #ffffff;
+    font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-primary {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    background-size: 200% auto;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.35);
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(139, 92, 246, 0.5);
+}
+
+.btn-outline {
+    padding: 13px 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.03);
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    border-color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 140px 24px 100px;
+    background: radial-gradient(circle at 50% 0%, #1a1333 0%, #0b0b14 65%);
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    color: #c4b5fd;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 26px;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    max-width: 780px;
+    margin-bottom: 22px;
+}
+
+.hero-title span {
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 16.5px;
+    color: #b9b4d6;
+    line-height: 1.7;
+    max-width: 620px;
+    margin-bottom: 38px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 60px 24px;
+    background: #0f0d1c;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-item p {
+    color: #8b87ad;
+    font-size: 13.5px;
+    margin-top: 6px;
+}
+
+/* ================= SECTION HEAD ================= */
+
+.section-head {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #a78bfa;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-head h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    padding: 100px 60px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px 24px;
+    transition: 0.35s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 18px 36px rgba(139, 92, 246, 0.15);
+}
+
+.feature-icon {
+    font-size: 26px;
+    color: #a78bfa;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 16.5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 13.5px;
+    color: #8b87ad;
+    line-height: 1.6;
+}
+
+/* ================= CTA ================= */
+
+.cta-banner {
+    text-align: center;
+    padding: 100px 24px;
+    background: linear-gradient(160deg, #1a1333 0%, #120e24 100%);
+}
+
+.cta-banner h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.cta-banner p {
+    color: #b9b4d6;
+    font-size: 14.5px;
+    margin-bottom: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px 70px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .features,
+    .cta-banner {
+        padding: 70px 24px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+}

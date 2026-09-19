@@ -1,0 +1,107 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background: rgba(11, 11, 20, 0.75);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    z-index: 999;
+    font-family: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+/* ================= LOGO ================= */
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.nav-logo:hover {
+    color: #a78bfa;
+}
+
+/* ================= NAV LINK BUTTONS ================= */
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: #d6d3ec;
+    font-size: 14.5px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* ================= LOGIN BUTTON ================= */
+
+.nav-login {
+    padding: 11px 26px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    background-size: 200% auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 22px rgba(139, 92, 246, 0.35);
+}
+
+.nav-login:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(139, 92, 246, 0.5);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 12px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .nav-logo {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-login {
+        margin: 0 auto;
+    }
+}

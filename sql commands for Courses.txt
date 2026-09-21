@@ -1,0 +1,103 @@
+SQL COMMANDS FOR MY COURSES TABLE
+
+---
+
+INSERT INTO Courses
+(
+    CourseName,
+    Duration,
+    Fees,
+    CourseImage,
+    CourseDescription
+)
+VALUES
+
+(
+    'Java',
+    '3 Months',
+    4000,
+    'java.jpg',
+    'Learn Java programming from basics to advanced concepts.'
+),
+
+(
+    'ASP.NET Core',
+    '3 Months',
+    6000,
+    'aspnet.jpg',
+    'Learn ASP.NET Core and build modern web applications.'
+),
+
+(
+    'SQL Server',
+    '3 Months',
+    3000,
+    'sql.jpg',
+    'Learn SQL Server, database concepts, queries, joins and more.'
+),
+
+(
+    'C++',
+    '3 Months',
+    4000,
+    'cpp.jpg',
+    'Learn C++ programming and object oriented programming.'
+),
+
+(
+    'DSA',
+    '4 Months',
+    5000,
+    'dsa.jpg',
+    'Learn Data Structures and Algorithms for coding and interviews.'
+),
+
+(
+    'Python',
+    '4 Months',
+    5000,
+    'python.jpg',
+    'Learn Python programming from basics to practical development.'
+),
+
+(
+    'C Programming',
+    '2 Months',
+    3000,
+    'c.jpg',
+    'Learn C programming fundamentals and problem solving.'
+),
+
+(
+    'Web Development',
+    '3 Months',
+    5000,
+    'web-development.jpg',
+    'Learn HTML, CSS, JavaScript and build modern websites.'
+),
+
+(
+    'React.js',
+    '3 Months',
+    5000,
+    'react.jpg',
+    'Learn React.js and build interactive modern web applications.'
+);
+
+---
+
+CREATE TABLE Courses
+(
+    CourseID INT IDENTITY(1,1) PRIMARY KEY,
+
+    CourseName VARCHAR(100) NOT NULL,
+
+    Duration VARCHAR(50) NOT NULL,
+
+    Fees DECIMAL(10,2) NOT NULL,
+
+    CourseImage VARCHAR(200),
+
+    CourseDescription VARCHAR(500)
+
+);

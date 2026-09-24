@@ -1,9 +1,10 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Login from "./Login";
 import Registration from "./Registration";
+import Courses from "./Courses";
 
 function App() {
     return (
@@ -11,15 +12,18 @@ function App() {
 
             <Routes>
 
-                {/* Login */}
-                <Route path="/login" element={<Login />} />
+                {/* Courses - "/" */}
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Navbar />
+                            <Courses />
+                        </>
+                    }
+                />
 
-                {/* Registration */}
-                <Route path="/register" element={<Registration />} />
-
-                {/* Main Website */}
-                <Route path="/" element={<Navigate to="/home" />} />
-
+                {/* Home */}
                 <Route
                     path="/home"
                     element={
@@ -28,6 +32,18 @@ function App() {
                             <Home />
                         </>
                     }
+                />
+
+                {/* Login */}
+                <Route
+                    path="/login"
+                    element={<Login />}
+                />
+
+                {/* Registration */}
+                <Route
+                    path="/register"
+                    element={<Registration />}
                 />
 
             </Routes>

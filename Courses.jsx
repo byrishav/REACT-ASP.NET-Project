@@ -28,9 +28,9 @@ function Courses() {
         <div className="courses-page">
 
             <div className="courses-header">
-                <span className="section-tag">Our Programs</span>
+                <span className="section-tag">Agamya Eduventure</span>
                 <h2>Our Courses</h2>
-                <p>Industry-driven programs designed to build real, job-ready skills.</p>
+                <p>Industry driven programs designed to build real, job ready skills.</p>
             </div>
 
             <div className="courses-grid">
@@ -40,14 +40,17 @@ function Courses() {
                     <div className="course-card" key={index}>
 
                         <div className="course-image-wrap">
-                            <img
-                                src={`/images/courses/${course.image}`}
-                                alt={course.name}
-                                className="course-image"
+                           <img
+                             src={`https://localhost:7040/images/courses/${course.image}`}
+                             alt={course.name}
+                             className="course-image"
                             />
+                                
+                            
                             <span className="course-duration-badge">
                                 <FaClock /> {course.duration}
                             </span>
+                            
                         </div>
 
                         <div className="course-body">
